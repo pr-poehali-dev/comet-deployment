@@ -16,7 +16,7 @@ const categories = [
     description: "Перфораторы, дрели, шлифмашины, бетономешалки, лазерные уровни",
     badge: "Аренда",
     badgeColor: "bg-blue-500",
-    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/e84fcacf-e380-4b46-8735-4c7dc9e1f675.jpg",
+    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/8b05a2d7-c4ce-44e3-ad47-e282b2538ab9.jpeg",
     icon: "Wrench",
   },
   {
