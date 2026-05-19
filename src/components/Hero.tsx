@@ -50,7 +50,7 @@ export function Hero() {
 
           <div className="grid grid-cols-3 gap-6 mt-16 pt-8 border-t border-white/10">
             {[
-              { value: "10+", label: "лет на рынке" },
+              { value: "1 год", label: "на рынке" },
               { value: "500+", label: "позиций товаров" },
               { value: "1000+", label: "клиентов" },
             ].map((stat) => (
