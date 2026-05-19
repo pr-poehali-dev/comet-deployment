@@ -41,7 +41,7 @@ export function Philosophy() {
           </div>
           <div className="relative rounded-xl overflow-hidden">
             <img
-              src="https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/3ca6224c-0308-4870-8476-b4d209dab309.jpg"
+              src="https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/f1e04437-b8b8-4d56-b50c-b1bd7b2d94a1.jpeg"
               alt="Склад стройматериалов Валижон"
               className="w-full h-72 object-cover"
             />
