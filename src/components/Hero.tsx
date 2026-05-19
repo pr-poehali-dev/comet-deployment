@@ -5,7 +5,7 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[hsl(220,20%,13%)] pt-16">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/90208de6-3acc-4f92-9d32-83c8dffdde93.jpg"
+          src="https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/841620a4-6390-4225-880c-807b174946df.jpeg"
           alt="Мағозаи сохтмони Валижон"
           className="w-full h-full object-cover object-center opacity-25"
         />
