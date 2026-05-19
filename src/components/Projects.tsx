@@ -7,7 +7,7 @@ const categories = [
     description: "Цемент М400/М500, сухие смеси, клей для плитки, штукатурка",
     badge: "Хит продаж",
     badgeColor: "bg-orange-500",
-    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/0f60bdb7-2639-4efa-b1f4-d446e36c86ff.jpg",
+    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/78ba3cfc-bc1b-4625-8b5c-090fb0d546b3.jpeg",
     icon: "Package",
   },
   {
