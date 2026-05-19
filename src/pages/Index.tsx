@@ -6,11 +6,14 @@ import { Expertise } from "../components/Expertise"
 import { FAQ } from "../components/FAQ"
 import { CallToAction } from "../components/CallToAction"
 import { Footer } from "../components/Footer"
+import { CartButton, CartDrawer } from "../components/Cart"
 
 export default function Index() {
   return (
     <main className="min-h-screen">
       <Header />
+      <CartDrawer />
+      <CartButton />
       <Hero />
       <Philosophy />
       <Projects />

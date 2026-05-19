@@ -20,7 +20,7 @@ export function Header() {
   const navLinks = [
     { label: "Главная", href: "#hero" },
     { label: "О нас", href: "#about" },
-    { label: "Каталог", href: "#projects" },
+    { label: "Каталог", href: "/catalog" },
     { label: "Услуги", href: "#services" },
     { label: "Вопросы", href: "#faq" },
   ]
