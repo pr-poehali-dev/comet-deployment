@@ -25,7 +25,7 @@ const categories = [
     description: "Красный кирпич, силикатный, газоблок, шлакоблок — опт и розница",
     badge: "Оптом",
     badgeColor: "bg-green-500",
-    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/90208de6-3acc-4f92-9d32-83c8dffdde93.jpg",
+    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/af27395d-b027-4be6-a051-0e8de453e2a5.jpeg",
     icon: "Layers",
   },
   {
