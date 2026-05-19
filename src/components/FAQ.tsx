@@ -46,7 +46,7 @@ export function FAQ() {
               Не нашли ответ? Позвоните нам — ответим на любой вопрос.
             </p>
             <a
-              href="tel:+992000000000"
+              href="tel:+992991221118"
               className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-sm transition-colors"
             >
               <Icon name="Phone" size={16} />

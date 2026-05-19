@@ -39,9 +39,15 @@ export function Footer() {
             <h4 className="text-white text-sm font-bold uppercase tracking-wide mb-4">Контакты</h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a href="tel:+992000000000" className="hover:text-orange-400 transition-colors flex items-center gap-2">
+                <a href="tel:+992991221118" className="hover:text-orange-400 transition-colors flex items-center gap-2">
                   <Icon name="Phone" size={14} />
-                  +992 000 000 000
+                  +992 991 221 118
+                </a>
+              </li>
+              <li>
+                <a href="tel:+992988350100" className="hover:text-orange-400 transition-colors flex items-center gap-2">
+                  <Icon name="Phone" size={14} />
+                  +992 988 350 100
                 </a>
               </li>
               <li>

@@ -54,7 +54,7 @@ export function Header() {
         </ul>
 
         <a
-          href="tel:+992000000000"
+          href="tel:+992991221118"
           className="hidden md:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded font-semibold text-sm transition-colors duration-200"
         >
           <Icon name="Phone" size={15} />
@@ -86,7 +86,7 @@ export function Header() {
             ))}
             <li>
               <a
-                href="tel:+992000000000"
+                href="tel:+992991221118"
                 className="inline-flex items-center gap-2 bg-orange-500 text-white px-5 py-3 rounded font-semibold mt-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

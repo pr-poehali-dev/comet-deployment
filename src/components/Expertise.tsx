@@ -61,7 +61,7 @@ export function Expertise() {
             <p className="text-orange-100 text-base">Позвоните нам — поможем рассчитать количество и стоимость для вашего объекта.</p>
           </div>
           <a
-            href="tel:+992000000000"
+            href="tel:+992991221118"
             className="flex-shrink-0 inline-flex items-center gap-3 bg-white text-orange-500 px-8 py-4 rounded-xl font-bold text-base hover:bg-orange-50 transition-colors uppercase tracking-wide whitespace-nowrap"
           >
             <Icon name="Phone" size={18} />

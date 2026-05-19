@@ -21,18 +21,18 @@ export function CallToAction() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
-              href="tel:+992000000000"
+              href="tel:+992991221118"
               className="inline-flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors uppercase tracking-wide"
             >
               <Icon name="Phone" size={22} />
-              +992 000 000 000
+              +992 991 221 118
             </a>
             <a
-              href="https://t.me/valijon_stroy"
+              href="tel:+992988350100"
               className="inline-flex items-center justify-center gap-3 border-2 border-white/20 hover:border-orange-500 text-white hover:text-orange-400 px-10 py-5 rounded-xl font-bold text-lg transition-all uppercase tracking-wide"
             >
-              <Icon name="Send" size={22} />
-              Telegram
+              <Icon name="Phone" size={22} />
+              +992 988 350 100
             </a>
           </div>
 
