@@ -1,102 +1,72 @@
-import { useEffect, useRef, useState } from "react"
-import { HighlightedText } from "./HighlightedText"
 import Icon from "@/components/ui/icon"
 
-const expertiseAreas = [
+const services = [
   {
-    title: "Строительные материалы",
-    description: "Цемент, песок, щебень, кирпич, газоблок — всё для возведения фундамента, стен и перекрытий. Оптовые и розничные цены.",
     icon: "Building2",
+    title: "Стройматериалы",
+    description: "Цемент, песок, щебень, кирпич, газоблок — всё для фундамента, стен и перекрытий.",
+    color: "bg-orange-500",
   },
   {
-    title: "Отделочные материалы",
-    description:
-      "Плитка, краски, штукатурка, гипсокартон, ламинат — помогаем подобрать материалы для чистовой отделки любого помещения.",
     icon: "Layers",
+    title: "Отделочные материалы",
+    description: "Плитка, краски, штукатурка, гипсокартон, ламинат — для чистовой отделки любого помещения.",
+    color: "bg-blue-500",
   },
   {
-    title: "Аренда инструментов",
-    description:
-      "Перфораторы, шлифмашины, бетономешалки, лазерные уровни — берите в аренду на день или неделю без переплаты за покупку.",
     icon: "Wrench",
+    title: "Аренда инструментов",
+    description: "Перфораторы, шлифмашины, бетономешалки — берите в аренду на день или неделю.",
+    color: "bg-green-500",
   },
   {
-    title: "Доставка по городу",
-    description:
-      "Организуем доставку стройматериалов по Конибодому и близлежащим районам. Большие объёмы — специальные условия.",
     icon: "Truck",
+    title: "Доставка по городу",
+    description: "Организуем доставку стройматериалов по Конибодому и районам. Крупные объёмы — спецусловия.",
+    color: "bg-purple-500",
   },
 ]
 
 export function Expertise() {
-  const [visibleItems, setVisibleItems] = useState<number[]>([])
-  const sectionRef = useRef<HTMLElement>(null)
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([])
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"))
-          if (entry.isIntersecting) {
-            setVisibleItems((prev) => [...new Set([...prev, index])])
-          }
-        })
-      },
-      { threshold: 0.2 },
-    )
-
-    itemRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref)
-    })
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section id="services" ref={sectionRef} className="py-32 md:py-29">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
-          <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Всё</HighlightedText> для
-            <br />
-            вашего строительства
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="text-center mb-14">
+          <div className="inline-block bg-orange-100 text-orange-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-4">
+            Наши услуги
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-[hsl(220,20%,13%)] uppercase">
+            Всё для вашего строительства
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            От фундамента до финишной отделки — у нас есть материалы и инструменты для любого этапа строительства или ремонта.
+          <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">
+            От фундамента до финишной отделки — материалы и инструменты для любого этапа.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
-          {expertiseAreas.map((area, index) => {
-            return (
-              <div
-                key={area.title}
-                ref={(el) => {
-                  itemRefs.current[index] = el
-                }}
-                data-index={index}
-                className={`relative pl-8 border-l border-border transition-all duration-700 ${
-                  visibleItems.includes(index) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                }`}
-                style={{ transitionDelay: `${index * 150}ms` }}
-              >
-                <div
-                  className={`transition-all duration-1000 ${
-                    visibleItems.includes(index) ? "animate-draw-stroke" : ""
-                  }`}
-                  style={{
-                    transitionDelay: `${index * 150}ms`,
-                  }}
-                >
-                  <Icon name={area.icon} className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} />
-                </div>
-                <h3 className="text-xl font-medium mb-4">{area.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{area.description}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((s, i) => (
+            <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <div className={`w-14 h-14 ${s.color} rounded-xl flex items-center justify-center mb-5`}>
+                <Icon name={s.icon} size={26} className="text-white" />
               </div>
-            )
-          })}
+              <h3 className="text-lg font-bold text-[hsl(220,20%,13%)] uppercase mb-3">{s.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{s.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 bg-orange-500 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-white text-2xl md:text-3xl font-bold uppercase mb-2">Нужен расчёт материалов?</h3>
+            <p className="text-orange-100 text-base">Позвоните нам — поможем рассчитать количество и стоимость для вашего объекта.</p>
+          </div>
+          <a
+            href="tel:+992000000000"
+            className="flex-shrink-0 inline-flex items-center gap-3 bg-white text-orange-500 px-8 py-4 rounded-xl font-bold text-base hover:bg-orange-50 transition-colors uppercase tracking-wide whitespace-nowrap"
+          >
+            <Icon name="Phone" size={18} />
+            Позвонить
+          </a>
         </div>
       </div>
     </section>
