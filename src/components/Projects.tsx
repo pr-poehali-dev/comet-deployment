@@ -34,7 +34,7 @@ const categories = [
     description: "Напольная, настенная и фасадная плитка. Большой выбор размеров и цветов",
     badge: "Новинки",
     badgeColor: "bg-purple-500",
-    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/3ca6224c-0308-4870-8476-b4d209dab309.jpg",
+    image: "https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/bucket/81cf5626-2caf-4363-bfcc-fb58dbcf578a.jpeg",
     icon: "Grid3X3",
   },
 ]
