@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Широкий ассортимент",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Цемент, кирпич, металл, плитка, утеплители — всё для строительства под одной крышей. Работаем как с частными клиентами, так и с крупными подрядчиками.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Проверенное качество",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Сотрудничаем только с надёжными производителями. Каждая партия товара проходит входной контроль — вы получаете материалы, соответствующие стандартам.",
   },
   {
-    title: "Естественная динамика",
+    title: "Аренда инструментов",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Не нужно покупать дорогой инструмент для разового использования. Берите в аренду перфораторы, шлифмашины, бетономешалки и многое другое.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Оптовые условия",
+    description: "Специальные цены для строительных компаний и постоянных клиентов. Доставка по Конибодому и районам — обсуждаем индивидуально.",
   },
 ]
 
@@ -51,28 +51,26 @@ export function Philosophy() {
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О магазине</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Магазин с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>характером</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
-                src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
+                src="https://cdn.poehali.dev/projects/be4779ac-49a8-403b-a2ff-4d3302f87552/files/3ca6224c-0308-4870-8476-b4d209dab309.jpg"
+                alt="Склад стройматериалов Валижон"
+                className="opacity-90 relative z-10 w-full rounded-xl"
               />
             </div>
           </div>
 
-          {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Мағозаи сохтмони Валижон — это семейный строительный магазин в Конибодоме. Более 10 лет помогаем строить дома, делать ремонт и реализовывать крупные проекты.
             </p>
 
             {philosophyItems.map((item, index) => (
